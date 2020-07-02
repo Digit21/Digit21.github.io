@@ -1,0 +1,32 @@
+body {
+  background-color: aquamarine;
+  background-image: url("nature.jpg");
+}
+h1 {
+  text-align: center;
+  color: black;
+}
+img {
+  width: 500px;
+  height: 300px;
+}
+
+.firs_image {
+  border-radius: 50;
+}
+
+.intro {
+  text-decoration: black;
+  color: black;
+}
+
+#vac {
+  background-color: darkgoldenrod;
+}
+
+#yellow {
+  background-color: yellowgreen;
+}
+.navbar {
+  background-color: grey;
+}
