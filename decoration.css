@@ -78,3 +78,18 @@ ul li.active a {
   background-color: black;
   color: whitesmoke;
 }
+
+h1 {
+  font-weight: lighter;
+  font-size: 15px;
+  color: white;
+  text-align: center;
+  padding-top: 15px;
+  margin-bottom: 0;
+}
+
+.Description {
+  font-size: 14px;
+  font-weight: bolder;
+  color: white;
+}
