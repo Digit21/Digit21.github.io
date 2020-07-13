@@ -29,37 +29,76 @@
         </ul>
       </div>
       <div class="title">
-        <h1>Services</h1>
-        <table class="table table-dark">
-          <thead>
-            <tr>
-              <th scope="col">#</th>
-              <th scope="col">First</th>
-              <th scope="col">Last</th>
-              <th scope="col">Handle</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <th scope="row">1</th>
-              <td>Mark</td>
-              <td>Otto</td>
-              <td>@mdo</td>
-            </tr>
-            <tr>
-              <th scope="row">2</th>
-              <td>Jacob</td>
-              <td>Thornton</td>
-              <td>@fat</td>
-            </tr>
-            <tr>
-              <th scope="row">3</th>
-              <td>Larry</td>
-              <td>the Bird</td>
-              <td>@twitter</td>
-            </tr>
-          </tbody>
-        </table>
+        <!-- <h1>Services</h1> -->
+        <div class="jumbotron jumbotron-fluid">
+          <div class="container text-center">
+            <h2 class="display-4">Vacation Destinations WishList</h2>
+            <p class="lead">
+              Found exciting places to visit on on your next vacation? Use the
+              form below to add them to your wishlist
+            </p>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-3">
+              <form id="destination_details_form">
+                <div class="form-group">
+                  <label for="name">Destination name</label>
+                  <input
+                    required
+                    minlength="2"
+                    type="text"
+                    class="form-control"
+                    id="name"
+                    placeholder="Enter the name of the destination"
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="location">Location</label>
+                  <input
+                    required
+                    minlength="2"
+                    type="text"
+                    class="form-control"
+                    id="location"
+                    placeholder="Where is it located?"
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="photo">Photo</label>
+                  <input
+                    type="url"
+                    class="form-control"
+                    id="photo"
+                    placeholder="Enter an image url of the place"
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="description">Description</label>
+                  <textarea
+                    type="text"
+                    class="form-control"
+                    id="description"
+                    placeholder="Where is it located?"
+                  ></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary submit_btn">
+                  Add to list
+                </button>
+              </form>
+            </div>
+            <div class="col-md-9">
+              <h4 id="title">Enter destination details</h4>
+              <div id="destinations_container">
+                <!-- Dynamically populated by Javascript -->
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Our Javascript -->
+        <script src="./script.js"></script>
       </div>
     </header>
   </body>
